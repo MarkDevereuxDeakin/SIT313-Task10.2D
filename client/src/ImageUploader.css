@@ -1,0 +1,15 @@
+.float-button{
+    
+    float: right;
+	display:flex;
+	flex-direction:row;
+	justify-content:right;
+	break-before: always;
+	margin: 10px;
+	text-align: right;	
+	align-items: center;
+}
+
+.upload {
+	margin:  0 25px;
+}

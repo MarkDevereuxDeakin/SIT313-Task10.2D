@@ -1,0 +1,12 @@
+.row {
+    display: flex;
+    text-align: center;
+    width:100%;
+}
+
+.column {
+    flex:25%;     
+}
+img{
+    padding-top: 25px;
+}

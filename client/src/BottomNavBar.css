@@ -1,0 +1,89 @@
+/*https://www.youtube.com/watch?v=58RRl1JTJvY - accessed 24/09/2021*/
+.bottom-navbar-container{    
+    background: rgb(233, 233, 233);
+    height: 60px;
+    width:100%;
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 100px;  
+  }
+  
+  /*https://www.youtube.com/watch?v=58RRl1JTJvY - accessed 24/09/2021*/
+  .newsletter-text{
+    text-align: center;
+    padding:12.5px;  
+    background: rgb(233, 233, 233);
+    height: 100%;
+    width:20%;
+    float:left;  
+  }
+  
+  /*https://www.youtube.com/watch?v=58RRl1JTJvY - accessed 24/09/2021*/
+  .newsletter-email-input{
+    text-align: center;
+    padding: 4px; 
+    background: rgb(233, 233, 233);
+    height: 100%;
+    width:20%;
+    float:left;  
+  }
+  
+  /*https://www.youtube.com/watch?v=58RRl1JTJvY - accessed 24/09/2021*/
+  .newsletter-email-button{
+    text-align: center;
+    padding: 4px; 
+    background: rgb(233, 233, 233);
+    height: 100%;
+    width:100%;
+    float:left;  
+  }
+  
+  /*https://www.youtube.com/watch?v=58RRl1JTJvY - accessed 24/09/2021*/
+  .social-container-1{
+    padding:12.5px;  
+    background: rgb(233, 233, 233);
+    height: 100%;
+    width:25%;
+    float:left;
+    text-align: right; 
+  }
+  
+  /*https://www.youtube.com/watch?v=58RRl1JTJvY - accessed 24/09/2021*/
+  .social-container-2{
+    padding:12.5px;  
+    background: rgb(233, 233, 233);
+    height: 100%;
+    width:25%;
+    float: right;
+    
+  }
+  
+  /*https://www.youtube.com/watch?v=58RRl1JTJvY - accessed 24/09/2021*/
+  a.social{
+    margin: 0 1rem;
+    transition:transform 250ms;
+    display: inline-block;
+  }
+  
+  /*https://www.youtube.com/watch?v=58RRl1JTJvY - accessed 24/09/2021*/
+  a.social:hover{
+    transform: translate(-2px);
+  }
+  
+  /*https://www.youtube.com/watch?v=58RRl1JTJvY - accessed 24/09/2021*/
+  a.youtube{
+    color: #eb3223;
+  }
+  
+  /*https://www.youtube.com/watch?v=58RRl1JTJvY - accessed 24/09/2021*/
+  a.facebook{
+    color: #4968ad;
+  }
+  
+  /*https://www.youtube.com/watch?v=58RRl1JTJvY - accessed 24/09/2021*/
+  a.twitter{
+    color: #49a1eb;
+  }
+  
+  a.instagram{
+    color: black;}

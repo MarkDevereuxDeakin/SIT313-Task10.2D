@@ -1,0 +1,58 @@
+.float-input {
+    margin: 0 100px 0 25px;	
+  }
+
+  .horizontal-layout {
+	border: none;
+	display:flex;
+	flex-direction:row;
+	justify-content:left;
+	break-before: always;
+	margin: 10px;
+	text-align: left;	
+	align-items: center;
+}
+
+.vertical-left-layout {
+	border: none;
+	display:flex;
+	flex-direction:row;
+	justify-content:left;
+	break-before: always;
+	margin: 10px;
+} 
+
+.main-label {
+	width:250px;
+		
+}
+
+.label {
+	width: 200px;
+}
+
+.text-large {
+	border: 1px solid #999999;
+	width: 500px;
+}
+
+.text {
+	border: 1px solid #999999;
+	width: 250px;
+}
+
+.text-small {
+	border: 1px solid #999999;
+	width: 150px;
+
+}
+
+.description{	
+	width: 500px;
+	height: 200px; 
+	border: 1px solid #999999; 
+	padding: 5px;
+	
+
+	
+}
