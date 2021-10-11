@@ -4,7 +4,7 @@ import './Card.css';
 function TaskCard(props)
 {
     return(
-        <div className='column'>
+        <div className='column-tasks'>
             <h4>{props.title}</h4>
             <p>{props.description}</p>
             <p>{props.suburb}</p>

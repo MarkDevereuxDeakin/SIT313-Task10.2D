@@ -16,15 +16,12 @@ app.use(express.urlencoded({limit: '25mb', extended: true}));
 app.use(express.static(path.join(__dirname, "/public")));
 app.use(cors());
 
+//mongoose
+mongoose.connect('mongodb://localhost:27017/iServiceDB', {useNewUrlParser:true, useUnifiedTopology: true});
+
 //routes
 //1. Retrieving, adding and removing ALL tasks
 app.route('/newtask')
-.get((req, res) => {
-  Task.find((err, taskList) =>{
-    if(err){res.send(err);}
-    else{res.send(taskList);}
-})
-})
 .post((req, res) => {
     const task = new Task({
         type: req.body.task_type,        
@@ -54,11 +51,11 @@ app.use("/uploads", async (req, res, next) => {
   }
 });
 
-//mongoose
- mongoose.connect('mongodb://localhost:27017/iServiceDB', { useUnifiedTopology: true ,  useNewUrlParser: true})
-.then(console.log('database connected'))
-.catch(err => err)
-
+app.route('/findtask')
+.get((req, res) => {
+  Task.find()
+  .then(tasklist => res.json(tasklist))  
+})
 
 //port
 let port = process.env.PORT;

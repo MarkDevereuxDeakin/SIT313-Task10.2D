@@ -1,5 +1,4 @@
 import Faker from 'faker';
-//import { Rating } from 'semantic-ui-react'
 
 const expertList = [
     {

@@ -1,5 +1,6 @@
 import React from 'react';
 import Input from './Input.jsx';
+import ImageUploader from './ImageUploader.jsx';
 
 
 function TaskDescription (prop)
@@ -28,7 +29,7 @@ function TaskDescription (prop)
                 rows = '500'
                 cols = '40'
                 />                
-            </div>
+            </div>            
         </div>
 
     )

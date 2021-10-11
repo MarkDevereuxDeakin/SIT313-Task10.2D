@@ -1,7 +1,6 @@
 import React from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faYoutube, faFacebook, faTwitter, faInstagram} from '@fortawesome/free-brands-svg-icons';
-//import { Input, Menu, Segment } from 'semantic-ui-react'
 import './BottomNavBar.css';
 
 function BottomNavBar()

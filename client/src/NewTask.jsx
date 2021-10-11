@@ -3,21 +3,19 @@ import TaskType from './TaskType.jsx';
 import TaskDescription from './TaskDescription.jsx';
 import LocationTime from './LocationTime.jsx';
 import Budget from './Budget';
-import ImageUploader from './ImageUploader.jsx';
+import ImageUploader from './ImageUploader';
 
 
 function NewTask()
 {   
     const [taskType, setTaskType] = useState('in-person');
     const [taskTitle, setTaskTitle] = useState('');
-    const [taskDescription, setTaskDescription] = useState('');
-    const [taskImage, setTaskImage] = useState('');
+    const [taskDescription, setTaskDescription] = useState('');    
     const [taskSuburb, setTaskSuburb] = useState('');
     const [taskDate, setTaskDate] = useState('');
     const [taskRate, setTaskRate] = useState('Total');
     const [taskAmount, setTaskAmount] = useState('');
     
-
     const handleClick = () =>
     {
         fetch('http://localhost:8080/newtask', {
@@ -38,31 +36,25 @@ function NewTask()
         .catch((err => console.log('Error: ' + err)))
     }
 
-    return(
-        <div>
+    return(        
         <form name="newtask" action="http://localhost:8080/newtask" method="POST">
             <TaskType
             taskType = {taskType}
-            setTaskType = {setTaskType}/>            
+            setTaskType = {setTaskType}/>           
             <TaskDescription
             taskTitle = {taskTitle} 
             setTaskTitle = {setTaskTitle}
             taskDescription = {taskDescription}
             setTaskDescription = {setTaskDescription}
-            taskImage = {taskImage}
-            setTaskImage = {setTaskImage} />
-        </form>
-        <form name="newtask" action="http://localhost:8080/newtask" method="POST">
+            />
+            <ImageUploader />                          
             <LocationTime
             taskType = {taskType}
             taskSuburb = {taskSuburb}
             setTaskSuburb = {setTaskSuburb}
             taskDate = {taskDate}
             setTaskDate = {setTaskDate}
-            />
-        </form>        
-        <ImageUploader />
-        <form name="newtask" >
+            />   
             <Budget
             taskRate = {taskRate}
             setTaskRate = {setTaskRate}
@@ -73,7 +65,7 @@ function NewTask()
               <button type="submit" className="button button-primary" onClick = {handleClick}>Post Task</button>
             </div>    
         </form>
-    </div>
+    
     )
 }
 export default NewTask;

@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const passportLocalMongoose = require('passport-local-mongoose');
+//const passportLocalMongoose = require('passport-local-mongoose');
 
 const taskSchema = new mongoose.Schema(
     {  
@@ -13,6 +13,6 @@ const taskSchema = new mongoose.Schema(
     }
 )
 
-taskSchema.plugin(passportLocalMongoose);
+//taskSchema.plugin(passportLocalMongoose);
 
 module.exports = mongoose.model("Tasks", taskSchema);

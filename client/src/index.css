@@ -27,7 +27,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   line-height: 1.2;
   background: rgb(233, 233, 233);
-  text-indent: 50px;
+  text-align: center;
+  
 }
 
 /**https://www.chiphost.org/form/reg-form/ - accessed 15/08/2021 */ 

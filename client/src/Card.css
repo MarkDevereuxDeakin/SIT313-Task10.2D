@@ -10,3 +10,7 @@
 img{
     padding-top: 25px;
 }
+.column-tasks {
+    text-align: left;
+    flex:33%;     
+}

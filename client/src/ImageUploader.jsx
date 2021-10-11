@@ -44,7 +44,7 @@ const createImage = (newImage) => axios.post(url, newImage);
 
   return (
     <div className = 'horizontal-layout float-input'>
-      <form className = 'horizontal-layout float-input' onSubmit={handleSubmit}>
+    <div className = 'horizontal-layout float-input'>      
       <div className = 'label' ><label for = 'myFile'>Upload Image:</label></div>
         <input className = 'text upload'
           type="file"
@@ -53,9 +53,8 @@ const createImage = (newImage) => axios.post(url, newImage);
           accept=".jpeg, .png, .jpg"
           onChange={(event) => handleFileUpload(event)}
         />
-        <button className = 'float-input' >Upload</button>
-      </form>
-      
+        <button className = 'float-input' onClick={handleSubmit}>Upload</button>
+    </div>
     </div>
   );
 }
