@@ -7,7 +7,7 @@ const taskSchema = new mongoose.Schema(
         title: String,
         description: String,        
         suburb: String,
-        date: Date,
+        date: String,
         rate: String,
         amount: String
     }

@@ -23,14 +23,15 @@ mongoose.connect('mongodb://localhost:27017/iServiceDB', {useNewUrlParser:true, 
 //1. Retrieving, adding and removing ALL tasks
 app.route('/newtask')
 .post((req, res) => {
-    const task = new Task({
-        type: req.body.task_type,        
-        title: req.body.task_title,
-        description: req.body.task_description,        
-        suburb: req.body.task_suburb,
-        date: req.body.task_date,
-        rate: req.body.task_rate,
-        amount: req.body.task_amount
+  
+  const task = new Task({
+      type: req.body.task_type,        
+      title: req.body.task_title,
+      description: req.body.task_description,        
+      suburb: req.body.task_suburb,
+      date: req.body.task_date,
+      rate: req.body.task_rate,
+      amount: req.body.task_amount
     });
     task.save()
     .catch((err) => console.log(err));
