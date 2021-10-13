@@ -21,11 +21,11 @@ function LocationTime(prop)
                                                            
                 <div className = 'vertical-left-layout'>           
                     <Input
-                    type = 'date'
+                    type = 'text'
                     text = 'Date:'
                     name = 'task_date'
                     className = 'text'
-                    placeholder = 'Please enter a date....'
+                    placeholder = '01 Jan 2021'
                     onChange = {(event) => prop.setTaskDate(event.target.value)}                    
                     />
                 </div>

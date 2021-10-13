@@ -17,7 +17,8 @@ function NewTask()
     const [taskAmount, setTaskAmount] = useState('');
     
     const handleClick = () =>
-    {
+    {       
+
         fetch('http://localhost:8080/newtask', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},

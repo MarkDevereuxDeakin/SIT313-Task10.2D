@@ -1,6 +1,6 @@
 //https://react.semantic-ui.com/collections/menu/#types-tabular-on-top - accessed 22/09/2021
 import React, { Component } from 'react'
-import { Input, Menu, Segment } from 'semantic-ui-react'
+import {Menu, Segment } from 'semantic-ui-react'
 import NewTask from './NewTask.jsx'
 import './index.css'
 import FindTask from './FindTask.jsx'
@@ -45,16 +45,7 @@ export default class MenuExampleTabularOnTop extends Component {
           />
           <Menu.Item>
             <button className='button button-primary'>Sign In</button>
-          </Menu.Item>
-          <Menu.Menu position='right'>
-            <Menu.Item>
-              <Input
-                transparent
-                icon={{ name: 'search', link: true }}
-                placeholder='Search Experts or Tasks...'
-              />
-            </Menu.Item>
-          </Menu.Menu>
+          </Menu.Item>          
         </Menu>
 
         <Segment attached='bottom'>

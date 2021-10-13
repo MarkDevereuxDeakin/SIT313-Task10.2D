@@ -6,7 +6,7 @@ import ExpertDisplay from './ExpertDisplay';
 
 
 //Function to export components
-function App(){    
+function App(){ 
     //Return components in the div element
     return(
     <div className = 'container'>

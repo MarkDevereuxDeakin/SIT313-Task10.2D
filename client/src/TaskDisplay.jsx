@@ -14,7 +14,7 @@ function  populateCards(task, index)
     >
     </TaskCard>
 }
-function ExpertDisplay()
+function taskDisplay()
 {
     return(
         <div className='container row'>
@@ -24,4 +24,4 @@ function ExpertDisplay()
         
     )
 }
-export default ExpertDisplay;
+export default taskDisplay;

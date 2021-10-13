@@ -22,7 +22,7 @@ function Input (prop)
                  cols = {prop.cols}
                  checked =  {checked === prop.value}
                  multiple = {prop.multiple}
-                 accept = {prop.accept}                                                                          
+                 accept = {prop.accept}                                                                                          
                  />
                  
             </div>             
