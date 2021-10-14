@@ -14,7 +14,7 @@ img{
 }
 .column-tasks {
     text-align: center;
-    flex:25%;
+    flex:33%;
     border-style:groove;
     border-color: black;
     height: 200px;  
@@ -61,5 +61,11 @@ img{
 .popup-inner .close-button{
     position: absolute;
     top: 16px;
+    right: 16px;
+}
+
+.popup-inner .delete-button{
+    position: relative;
+    bottom: 16px;
     right: 16px;
 }

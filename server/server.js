@@ -58,6 +58,20 @@ app.route('/findtask')
   .then(tasklist => res.json(tasklist))  
 })
 
+app.route('/delete')
+.delete((req, res, next) => {
+  Task.deleteOne(req.params.id, (error, data) => {
+    if(error)
+    {
+      return next(error);
+    }
+    else
+    {      
+      res.status(200).json('Task Successfully Deleted!')        
+    }
+  })
+})
+
 //port
 let port = process.env.PORT;
 if(port == null || port == ""){

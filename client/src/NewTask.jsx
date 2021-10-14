@@ -31,10 +31,13 @@ function NewTask()
                 rate: taskRate,
                 amount: taskAmount,
             })
+            
         })
         .then(response => response.json())
-        .then(data => console.log(data))
+        .then(data => console.log(data))         
         .catch((err => console.log('Error: ' + err)))
+        
+        window.location.reload(true); 
     }
 
     return(        

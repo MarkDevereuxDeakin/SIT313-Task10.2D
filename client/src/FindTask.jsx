@@ -1,3 +1,4 @@
+//https://www.youtube.com/watch?v=i8fAO_zyFAM - accessed 12/10/2021
 //https://levelup.gitconnected.com/how-to-search-filter-through-data-in-react-26f1545fe3a1 - accessed 12/10/2021
 import React, {useEffect, useState} from 'react';
 import PopUpCard from './PopUpCard';
@@ -8,6 +9,7 @@ import TaskCard from './TaskCard';
 
 function FindTask (props){    
     const [allData, setAllData] = useState([{
+        _id: '',
         type: '',
         title: '',
         description: '',
@@ -91,8 +93,7 @@ function FindTask (props){
         .then(response => response.json())
         .then(data => setTasks(data))
         .then(data => console.log()); */
-    }, []); //
-
+    }, []);   
     
     return (        
 
@@ -114,22 +115,23 @@ function FindTask (props){
                     
                     return (
                         <div key = {value.id} className = 'column-tasks' onClick = {() => activatePopUp(value)}>                            
-                            <TaskCard             
-                            type = {value.type}
+                            <TaskCard
+                            _id = {value._id}            
+                            type = {value.type}                            
                             title = {value.title}
                             description = {value.description}
                             suburb = {value.suburb}
                             date = {value.date}//{new Date(value.date).toLocaleDateString('en-GB')}
                             rate = {value.rate}
-                            amount = {value.amount}
+                            amount = {value.amount}                            
                             >                                                      
-                            </TaskCard>                                                                                                                    
+                            </TaskCard>                                                                                                                                                
                         </div>                        
                         )                        
                 })}
             </div>            
             <div className = 'horizontal-layout'>            
-            <PopUpCard
+            <PopUpCard            
             type = {clickData.type}
             title = {clickData.title}
             description = {clickData.description}
